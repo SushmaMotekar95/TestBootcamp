@@ -1,0 +1,92 @@
+footer{
+    background-color:rgb(43, 36, 36);
+    color: #ffffff;
+    position:fixed;
+    bottom: 0px;
+    height: 50px;
+    width:100%;
+    padding-top: 10px;
+    z-index: 2;
+}
+footer div h3{
+    margin-left: 80px;
+}
+footer div h5{
+    margin-left: 40px;
+    line-height: 0.6cm;
+}
+.bootcamp-btn{
+    background-color: #ffa500;
+    color:#f0f8ff;
+    border: none;
+    box-shadow: 2px 2px 10px #f0f8ff;;
+    height: 40px;
+    width: 250px;
+    border-radius: 20px;
+    float:right;
+    margin-right: 40px;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    animation: bounce 1s linear infinite;
+    transition: transform 0.5s, background-color 2s;
+}
+/* Button hover effect */
+.bootcamp-btn:hover{
+    background-color :#009378; 
+    border: none;
+    animation-delay: 1000s;
+}
+/* Button click effect */
+.bootcamp-btn:active {
+    background-color: #009378; 
+    transform: scale(0.9);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-10px);
+    }
+    60%{
+        transform: translateY(-5px);
+    }
+}
+@media only screen and (max-width: 360px) {
+    .bootcamp-btn{
+        font-size: 14px !important;
+        font-weight: bold;
+    }
+}
+   
+/* For mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+    footer div h3{
+        margin-left: 40px;
+        font-size: 16px;
+    }
+    footer div h5{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .bootcamp-btn{
+        width: auto;
+        margin-right: 5px;
+        height: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 16px;
+    }
+}
+/* For tablets like iPads (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  
+}
+/* For laptops and desktops */
+@media only screen and (min-width: 1025px) {
+    
+}
+ 
+  

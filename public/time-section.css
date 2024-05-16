@@ -1,0 +1,98 @@
+.timecount-section{
+    text-align: center;
+    padding: 45px 20px 80px 0px;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time-title{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+   
+}
+.time-section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.time{
+    color:rgb(253, 253, 255);
+    border: 1px solid rgb(214, 220, 226);
+    height: 75px;
+    width: 90px;
+    margin-left: 20px;
+    padding-top: 15px;
+    border-radius: 20px;
+    background-color: #ffa500;  
+}
+.hurry {
+    animation: zoom 1s ease-in-out infinite;
+    font-weight: bold;
+    color:#6acf18; 
+    font-size: 35px;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply the animation to the text */
+
+@media only screen and (max-width: 360px) {
+    .time-section .time{
+        margin-left: 5px;
+        height: 70px;
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .time-section{
+        margin-left: 0px;
+        height: auto !important;
+        width: auto !important;
+    }
+    .time-title {
+        font-size: 32px;
+    }
+    .time{
+        margin-left: 5px;
+        height: 75px;
+        width: 90px;
+        padding-top: 10px;
+    }
+    .timecount-section{
+        padding-top: 25px;
+        padding-right: 5px;
+        padding-bottom: 40px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .time-section{
+        margin-left: 0px;
+        height: auto;
+        width: auto;
+        padding-top: 0px;
+        padding-right: 0px;
+    }
+}
+@media only screen and (min-width: 1025px) {
+   
+}

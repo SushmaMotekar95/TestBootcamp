@@ -1,0 +1,168 @@
+.instructor-section{
+    text-align: center;
+    padding: 45px 20px 60px 0px;
+    background-color: #f0f8ff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.instructor-title{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+} 
+.instructor-info{
+    /* width: 600px;
+    height: 350px; */
+    font-family: "Nunito", sans-serif;
+    line-height: 0.7cm;
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+    border-radius: 10%;
+    border: 2px solid (225, 243, 247);
+    margin-top: 20px;
+}
+.instructor-info .sir{
+    margin: 15px 0px;
+    color: #ffa500;
+    font-size: 35px;
+    font-weight: 900;
+}
+.instructor-img{
+    border-radius: 50%;
+    height:200px;
+    width: 210px;
+    margin-top: 30px;
+    border: 8px solid  #cce0ec; 
+    box-shadow: 0px 0px 3px #acb3b5;
+}
+.instructor-name{
+    margin-left: 20px;
+    line-height: 1.5rem;
+}
+.instructor-info h3{
+    font-size: 20px;
+    color:rgb(73, 71, 71);
+}
+.instructor-img-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+.instructor-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.instructor-info-card{
+    height: 140px;
+    width: 225px;
+    border: 1px solid #f3eee5;
+    box-shadow: 3px 3px 10px#ebdfca;
+    background-color: #fffefb;
+    padding: 20px 20px 10px 20px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+/* .instructor-info-card:hover{
+    transform: scale(1.1);
+} */
+.instructor-info-card p{
+    margin-top: 20px;
+    text-align: left;
+}
+.instructor-card-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .instructor-card-heading h1{
+    color: #009378;
+} */
+.instructor-card-heading img{
+    height:40px; 
+    width:40px;
+}
+@media only screen and (max-width: 360px){
+    .instructor-info-card {
+        height: 160px !important;
+        width: 115px !important;
+        margin-left: 10px !important;
+    }
+    .instructor-img-name {
+        margin-left: 15px;
+    }
+    .instructor-img {
+        margin-left: 0px !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .instructor-info{
+        padding: 0px 10px 0px 10px;
+        width: auto;
+        height: auto;
+        margin-bottom: 30px;
+        line-height: 1.5rem;
+    }
+    .instructor-section{
+        padding-right:0px;
+        padding-bottom: 0px;
+    }
+    .instructor-img{
+        margin-top: 40px;
+        margin-bottom: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    /* .instructor-info h1{
+        margin-bottom: 15px;
+    } */
+    .instructor-info-card p {
+        margin-top: 15px;
+    }
+    .instructor-info-card {
+        height: 160px;
+        width: 130px;
+        margin-left: 15px;
+    }
+    .instructor-img {
+        margin-left: 30px;
+    }
+    .instructor-name {
+        margin-left: 0px;
+    }
+    .instructor-card {
+        margin-top: 15px;
+    }
+    .instructor-img-name {
+        margin-top: 15px;
+    }
+  }
+  /* For tablets like iPads (portrait and landscape) */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .instructor-section{
+        padding-bottom: 0px;
+    }
+    .instructor-title {
+        font-size: 32px;
+    }
+    .instructor-info{
+        width: auto;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+        line-height: normal;
+        
+    }
+ 
+  }  
+  /* For laptops and desktops */
+@media only screen and (min-width: 1025px) {
+   
+  }

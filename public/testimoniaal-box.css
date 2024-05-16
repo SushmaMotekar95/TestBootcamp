@@ -1,0 +1,170 @@
+.testimonial-box{
+    width: auto;
+    height: 320px;
+    /* border: 1px solid orange; */
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px orange;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+}
+.profile-img{
+    /* width: 100%;
+    height: 100%; */ 
+    overflow:hidden;
+    margin-right: 5px;
+}
+.profile-img img{
+    border: 2px solid rgb(236, 230, 230);
+    border-radius: 50%;
+    width: 35px !important;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: #f9d71c;
+    font-size: 12px;
+    text-align: center;
+}
+.box-top{
+    text-align: start;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s
+}
+/*@media (max-width: 1060px){
+    .testimonial-box{
+        width: 85%;
+        padding: 10px;
+        height: 410px;
+    }
+}*/
+@media (max-width: 790px){
+    .testimonial-box{
+        width: 85%;
+        height: auto;
+        margin-top:12px;
+        margin-left: 2px;
+    }
+    .testimonial-box h1{
+        font-size: 1.4rem;
+    }
+    .name-user strong {
+        color: #3d3d3d;
+        font-size: 0.9rem;
+        letter-spacing: 0px;
+    }
+    .reviews {
+        font-size: 12px;
+    }
+}
+@media (max-width: 340px){
+    .box-top{
+        flex-wrap:wrap;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        margin-top:10px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .testimonial-box{
+        width: auto;
+        height: auto;
+        margin-left: 2px;
+    }
+    .profile-img{
+        overflow:hidden;
+        margin-right: 0px;
+    }
+    .profile-img img{
+        width: 30px !important;
+        margin-right: 5px;
+    }
+    .name-user strong {
+        color: #3d3d3d;
+        font-size: 0.9rem;
+        letter-spacing: 0px;
+    }
+    .reviews {
+        text-align: center;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 767px) {
+}
+
+/* For tablets like iPads (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .name-user strong {
+        color: #3d3d3d;
+        font-size: 0.9rem;
+        letter-spacing: 0px;
+    }
+    .reviews {
+        font-size: 12px;
+    } 
+    .testimonial-box{
+        /* height: 380px; */
+        height: auto;
+    }
+
+ 
+}  
+@media only screen and (min-width: 912px) and (max-width: 912px) and (orientation: portrait) {
+    .name-user strong {
+        color: #3d3d3d;
+        font-size: 0.9rem;
+        letter-spacing: 0px;
+    }
+    .reviews {
+        font-size: 12px;
+    } 
+ }
+ @media only screen and (min-width: 1368px) and (max-width: 1368px) and (orientation: landscape) {
+    .name-user strong {
+        color: #3d3d3d;
+        font-size: 0.9rem;
+        letter-spacing: 0px;
+    }
+    .reviews {
+        font-size: 12px;
+    } 
+    .testimonial-box {
+        width: 85%;
+        padding: 10px;
+        height: 306px;
+    }
+ }
+/* For laptops and desktops */
+@media only screen and (min-width: 1025px) {
+ 
+}

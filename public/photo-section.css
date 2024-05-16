@@ -1,0 +1,112 @@
+.photo-section{
+    text-align: center;
+    padding: 45px 0px 40px 0px;
+    background-color: #f0f8ff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.photo-title{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+} 
+.milion{
+    color: #ffa500;
+}
+.grid-wrapper div img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+/* .grid-wrapper  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} */
+.grid-wrapper > div >  a >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.grid-wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow:dense;
+    margin-top: 35px;
+    /* margin: 0px 100px; */
+}
+
+/*.grid-wrapper > div {
+    flex: 0 0 calc(100% - 20px); 
+    max-width: calc(100% - 20px); 
+    margin-bottom: 20px; 
+}*/
+
+/*.grid-wrapper {
+    display: grid;
+  
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow:dense;
+    margin-top: 35px;
+    margin: 0px 100px;
+}*/
+
+/*.grid-wrapper .wide{
+    grid-column: span 2;
+}
+.grid-wrapper .tall{
+    grid-row: span 2;
+}*/
+.grid-wrapper .big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.photo-bottom-line p{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 767px) {
+    .photo-title{
+        font-size: 32px;
+    }
+    .grid-wrapper > div > a > img {
+        width: 90%;
+        border-radius: 20px;
+    }
+     .grid-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-gap: 20px;
+    }
+    .photo-bottom-line p {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .grid-wrapper > div > a > img {
+        width: 90%;
+        height: 95%;
+        border-radius: 20px;
+    }
+    .grid-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-gap: 20px;
+    }
+ 
+}  

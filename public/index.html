@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CODEMIND</title>
+    <link rel="icon" type="image/x-icon" href="images/codemind-img/cm-logo.ico">
+    <!-- Style Owl curosel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <!-- External CSS-->
+    <link rel="stylesheet" type="text/css" href="stylel.css">
+    <link rel="stylesheet" type="text/css" href="video-section.css">
+    <link rel="stylesheet" type="text/css" href="program-section.css">
+    <link rel="stylesheet" type="text/css" href="stories-section.css">
+    <link rel="stylesheet" type="text/css" href="videomodel.css">
+    <link rel="stylesheet" type="text/css" href="navarrow.css">
+    <link rel="stylesheet" type="text/css" href="doc-section.css">
+    <link rel="stylesheet" type="text/css" href="testimoniaal-box.css">
+    <link rel="stylesheet" type="text/css" href="Whatsapp-section.css">
+    <link rel="stylesheet" type="text/css" href="syllabus-section.css">
+    <link rel="stylesheet" type="text/css" href="instructor-section.css">
+    <link rel="stylesheet" type="text/css" href="photo-section.css">
+    <link rel="stylesheet" type="text/css" href="time-section.css">
+    <link rel="stylesheet" type="text/css" href="faq.css">
+    <link rel="stylesheet" type="text/css" href="copyRight-Section.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="to_Top.css">
+    <link rel="stylesheet" type="text/css" href="popup-section.css">
+    <link rel="stylesheet" type="text/css" href="registration_popup.css">
+    <link rel="stylesheet" type="text/css" href="photo-popup.css"> 
+</head>
+<body>
+    <!-- header Section -->
+    <header>
+        <p class="start">Start your web development <span class="hmtlcss">with HTML & CSS</span>  in just Rs. 99/- </p>
+        <button class="enroll-btn" onclick="togglePopup()">Enroll Now</button>
+    </header>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2><span class="Join">Join</span> Our 3-Day CSS <span class="bootName">Boot</span>camp!</h2>
+            <form action="/sign_up" method="post" id="form"  onsubmit="return validateForm()">
+                <input class="name" type="text" id="name" name="name" placeholder="Full Name" autocomplete="name" >
+                <div id="nameError" class="error"></div>
+                <input class="email" type="email" id="email" name="email" placeholder="xyz@gmail.com" autocomplete="email" >
+                <div id="emailError" class="error"></div>
+                <input class="number" id="Number" name="Number" type="tel" placeholder="+91 0000000000" autocomplete="tel" >
+                <div id="numberError" class="error"></div>                
+                <button class="submit-btn" type="submit">Enroll Now</button>
+            </form>
+        </div>
+    </div>
+    <script defer src="registration_popup.js" content-type="text/javascript"></script>
+   
+    <!-- Video Section -->
+    <div class="VideoSection">
+        <div class="video-section">
+            <div class="title-section">
+                <div class="video-gallery">
+                    <a href="javascript:void(0);" class="youtube-link" youtubeid="yRpLlJmRo2w?si=4XkKGmjF01t8iFrB"></a>
+                         <iframe class="display-video" src="https://www.youtube.com/embed/yRpLlJmRo2w?si=4XkKGmjF01t8iFrB" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                 </div>
+            </div>
+            <div class="title-section1">
+                <p class="Title1">Learn the website development in <span style="color:#ffa500;"> just 3 days</span> to create your own protflio & make design like Instagram, chatGPT & Youtube.</span> </p>
+                <h4><span class="Title2">The must have bootcamp to quick start your Web development.</span></h4>
+             </div>
+        </div>
+        <div class="detail-section">
+            <div class="info">
+                    <div class="boot"> 3 days Bootcamp </div>
+                    <div class="boot"> Zoom Sessions</div>
+                    <div class="boot"> NRI-Woking Experts </div>
+                    <div class="boot"> Form 19<sup>th</sup> April</div>
+                    <div class="boot"> Form 8:30 PM</div>
+                    <div class="boot"> Live Sessions</div>
+            </div>
+        </div>
+        <div>
+            <button class="btn" onclick="togglePopup()">Enroll Now just at Rs. 99/- <br><span class="small-text">The most demanding BootCamp for job seekers </span></button>
+        </div>
+    </div>
+
+    <!-- JQuery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- popup css-->
+    <link rel="stylesheet" href="files/grt-youtube-popup.css">
+    <!-- popup JavaScript logic -->
+    <script src="files/grt-youtube-popup.js"></script>
+    <script type="text/javascript">
+       $(".youtube-link").grtyoutube({
+           autoplay:true,
+           theme:"dark"
+       });
+    </script>
+   
+    <!-- Designed Flexible program -->
+    <div class="progarm-section">
+        <div class="program-title">
+            <p> We have designed Master <span class="boot-word">Boot</span>Camp <br>Specially for you </p>
+        </div>
+        <div class="program-card">
+            <div id="card-color1" class="card">
+                <img class="card-img" src="images/card-img/project-img.webp">
+               <h3>10 Projects for graduates with code</h3> 
+               <p>The best projects to learn step by step & master the web development</p>
+            </div>
+            <div id="card-color2" class="card">
+                <img  class="card-img" src="images/card-img/logical-img.png">
+                <h3>50 IMP Logical questions</h3> 
+                <p>The most important logical questions that's been asked in technical interview</p> 
+            </div>
+            <div id="card-color3" class="card">
+                <img class="card-img" src="images/card-img/resume-img.png">
+                <h3>Catchy resume Temaplates</h3> 
+                <p>get the catchy resume templates with most efficacy in interview selection</p>
+            </div>
+            <div id="card-color4" class="card">
+                <img  class="card-img" src="images/card-img/project-img1.webp">
+                <h3>Project Based Learning</h3> 
+                <p>One line of code at a time through hands on projects, where learning meets real world-applications</p>
+            </div>
+            <div id="card-color5" class="card">
+                <img class="card-img" src="images/card-img/certificate-icon.png">
+                <h3>Get certificate!</h3> 
+                <p>Join us noww our bootcamp to earn your free certificate & showcase your expertise on our esteemed platform</p>
+            </div>
+            <div id="card-color6" class="card">
+                <img class="card-img" id="card6" src="images/card-img/liveclas- image.jpg">
+                <h3>All Live Sessions!</h3>
+                <p>Elevate your skills with real-time instruction - join our live sessions for an immersive learning experience & clear your doubts instantly </p>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Success Stories -->
+    <div class="stories-section" >
+        <div class="stories-title">
+            <!-- <p>Can't make up your mind?</p> -->
+            <!-- <p>Can't decide?</p> -->
+            <!-- <p> Success Stories from the course Students </p> -->
+            <!-- <h6 class="headLine">Listen to the success stories of people I've teamed up with</h6> -->
+            <!-- <p class="headLine">Hear about how others I've worked with found success</p> -->
+            <p>Finding it hard to choose? </p>
+            <p class="headLine"> Gain inspiration from the success stories of those I've partnered with</p> 
+        </div>
+        <div class="owl-carousel-section1"> 
+            <div class="owl-carousel owl-carousel1 owl-theme">
+                <div class="item" >
+                    <div class="video-gallery">
+                        <a href="javascript:void(0);" class="youtube-link" youtubeid="Yxiv1KQQ-9c?si=mAPmIuvs8mL5dQXb"></a>
+                        <iframe class="display-video1" src="https://www.youtube.com/embed/Yxiv1KQQ-9c?si=mAPmIuvs8mL5dQXb"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="item" >
+                    <div class="video-gallery">
+                        <a href="javascript:void(0);" class="youtube-link" youtubeid="a46KZtv1gaQ?si=8t4Uk1VeEY46wKum"></a>
+                        <iframe class="display-video1" src="https://www.youtube.com/embed/a46KZtv1gaQ?si=8t4Uk1VeEY46wKum"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>    
+                </div>
+                <div class="item" >
+                    <div class="video-gallery">
+                        <a href="javascript:void(0);" class="youtube-link" youtubeid="1c2Ut8Km2oo?si=roySfIMXqiJB_SkJ"></a>
+                        <iframe class="display-video1" src="https://www.youtube.com/embed/1c2Ut8Km2oo?si=roySfIMXqiJB_SkJ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="item" >
+                    <div class="video-gallery">
+                        <a href="javascript:void(0);" class="youtube-link" youtubeid="P9iIfrMkHAs?si=_4F-dk_VdEBhjscI"></a>
+                        <iframe class="display-video1" src="https://www.youtube.com/embed/P9iIfrMkHAs?si=_4F-dk_VdEBhjscI"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="item" >
+                    <div class="video-gallery">
+                        <a href="javascript:void(0);" class="youtube-link" youtubeid="PqfVoMNWa1s?si=4LDAJ5bZzZ0rVJns"></a>
+                        <iframe class="display-video1" src="https://www.youtube.com/embed/PqfVoMNWa1s?si=4LDAJ5bZzZ0rVJns"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- JQuery link -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- popup css-->
+     <link rel="stylesheet" href="files/grt-youtube-popup.css">
+     <!-- popup JavaScript logic -->
+     <script src="files/grt-youtube-popup.js"></script>
+     <script type="text/javascript">
+        $(".youtube-link").grtyoutube({
+            autoplay:true,
+            theme:"dark"
+        });
+     </script>
+
+    <!-- Offer-Letter Section -->
+    <div class="document-section" >
+        <div class="document-title">
+            <p> Our Recent Placement </p>
+        </div>
+        <div class="owl-carousel-section2"> 
+             <!-- owl curosel -->
+            <div class="owl-carousel owl-carousel1 owl-theme">
+                <div class="item">  
+                    <a href="images/offer-letter/Akshay Shisode.jpg" data-lightbox="placement">
+                        <img class="display-doc" src="images/offer-letter/Akshay Shisode.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="images/offer-letter/SHREYAS DESHPANDE.jpg" data-lightbox="placement">
+                        <img  class="display-doc" src="images/offer-letter/SHREYAS DESHPANDE.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="images/offer-letter/Vikas Ganpatil.jpg" data-lightbox="placement">
+                        <img  class="display-doc" src="images/offer-letter/Vikas Ganpatil.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="images/offer-letter/prem_rathor.jpg" data-lightbox="placement">
+                        <img  class="display-doc" src="images/offer-letter/prem_rathor.jpg">
+                    </a>
+                </div>
+                <div class="item"> 
+                    <a href="images/offer-letter/Rohit_Pawar.jpg" data-lightbox="placement">
+                        <img class="display-doc" src="images/offer-letter/Rohit_Pawar.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="images/offer-letter/sachin_kadam.jpg" data-lightbox="placement">
+                      <img  class="display-doc" src="images/offer-letter//sachin_kadam.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="images/offer-letter/sarvesh_holla.jpg" data-lightbox="placement">
+                        <img  class="display-doc" src="images/offer-letter/sarvesh_holla.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="images/offer-letter/sonali_krande.jpg" data-lightbox="placement">
+                        <img  class="display-doc" src="images/offer-letter/sonali_krande.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LinghtBox Js(JavaScript) --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- Testimonial Section -->
+    <div class="whatsapp-section" >
+        <div class="whatsapp-title">
+            <p> Our Students Love <span style="color:rgb(155, 228, 45);">CODE</span>MIND</p>
+        </div>
+        <div class="owl-carousel-section3">
+            <div class="owl-carousel owl-carousel2 owl-theme">
+                <div class="item"> 
+                    <div class = "testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                     <img src="images/testimonial-img/priyanka.jpg">
+                                </div>
+                                <div class="name-user">
+                                    <strong> Pratiksha Bhuse</strong>
+                                     <span>@pratikshabhuseweb</span> 
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="client-comment">
+                            <p>I joined CodeMind Technology training center for learn the Java language. 
+                                The environment of Institute is very friendly. The Institute is very helpful 
+                                for study materials. I has me to easily get knowledge of java language trainers 
+                                are highly skilled and depth knowledge. I am getting good knowledge from them. Group 
+                                discussion is very helpful for me to improve my communication. Practice sessions and 
+                                assignment made my development strong. Thanks! To all team of CodeMind Technology 
+                                training center. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item"> 
+                    <div class = "testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                     <img src="images/testimonial-img/P1-letter.jpg">
+                                </div>
+                                <div class="name-user">
+                                    <strong>Priyanka Gaikwad</strong>
+                                     <span>@priyankagaikwadweb</span> 
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="client-comment">
+                            <p>Codemind Technology ‘s tag line [Learn with us ,job with us]defines everything. 
+                               Great place to learn New Technologies. Our trainer Gajanan sir is a great mentor 
+                               with in depth knowledge .The way he teaches complex things is just excellent. The 
+                               course is well-structured, and the trainers are knowledgeable and supportive. They 
+                               not only focus on topics but also over all development of individual to make career 
+                               successful. Thanks !. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item"> 
+                    <div class = "testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                     <img src="images/testimonial-img/R-letter.png">
+                                </div>
+                                <div class="name-user">
+                                    <strong>Rohan Wakchaure</strong>
+                                     <span>@rohanwakchaureweb</span> 
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="client-comment">
+                            <p>Code Mind is a very good training center with very low fees for different courses. 
+                               Also, the teachers give very close personal attention to each student. They practice 
+                               a lot of programming. Especially, the main aim of the teachers here is that every student 
+                               must get a job in IT. Difficult concepts are taught here in a very simple manner.It gives
+                               graduates from any discipline a chance to get a job in IT field.Thank you very much. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item"> 
+                    <div class = "testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                     <img src="images/testimonial-img/kalyani.png">
+                                </div>
+                                <div class="name-user">
+                                    <strong>kalyani yadav</strong>
+                                     <span>@kalyaniyadavweb</span> 
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="client-comment">
+                            <p>CodeMind Technology is an excellent institute, with less fees they provide such good 
+                                courses thats helps us getting our dream job in desired field...the way teacher 
+                                explaining each concepts with real time examples in an easy manner helped me to learn 
+                                and gain confidence in testing and the support they provide is really appreciated. 
+                                thank you Chandan Sir for all your support. #codemindTechnology#bestteacher </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item"> 
+                    <div class = "testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                     <img src="images/testimonial-img/S-letter.jpg">
+                                </div>
+                                <div class="name-user">
+                                    <strong>Sakshi Patil</strong>
+                                     <span>@saksipatilweb</span> 
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="client-comment">
+                            <p>I loved Codemind Pune classes! The teachers were great and made learning easy. We did 
+                                lots of fun projects that helped me understand coding better. Now I feel really confident
+                                in my skills.Codemind helps us improve our skills. Codemind Technology Family is very 
+                                Excellent and hardworking.Learn with us job with us. Is a very greatful opportunity give 
+                                the Codemind technology Inside Codemind, Sir's behavior is like that of a friend, due to 
+                                which we can ask him questions with full confidence. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"> 
+                    <div class = "testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                     <img src="images/testimonial-img/A-letter.png">
+                                </div>
+                                <div class="name-user">
+                                    <strong>Arvind Panpatte</strong>
+                                     <span>@arvinpanpatteweb</span> 
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="client-comment">
+                            <p>Trainer creates a welcoming atmosphere in the classroom. I always felt comfortable 
+                               approaching them with questions or concerns, fostering a positive and open learning 
+                               environment. During a challenging period for me, Gajanan Sir & Dnyaneshwar Sir offered 
+                               understanding and support. Their encouragement motivated me to persevere and excel in the 
+                               course. The feedback provided on assignments was constructive and detailed. It demonstrated a 
+                               genuine interest in each student's progress and a commitment to helping us to improve.</p>
+                        </div>
+                    </div>
+                </div>  
+                
+                <div class="item"> 
+                    <div class = "testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                     <img src="images/testimonial-img/S1-letter.png">
+                                </div>
+                                <div class="name-user">
+                                    <strong>Snehal Khedekar</strong>
+                                     <span>@snehalkhedekarweb</span> 
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="client-comment">
+                            <p>Training institute where mentor teaches us just like our friend and always infuses
+                                us with knowledge, skills, guidance and positive energy, just like the sun gives to 
+                                the planets. The way Gajanan sir explains things makes the complicated topic easier.
+                                His teaching is extraordinary. For me he is just like the sun in the solar system. 
+                                I am really very happy that I joined an institute with such passionate and knowledgeable
+                                mentors. Me(hardware) + Codemind(software)= Successful career </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item"> 
+                    <div class = "testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                     <img src="images/testimonial-img/S2-letter.png">
+                                </div>
+                                <div class="name-user">
+                                    <strong>Sagar Misal</strong>
+                                     <span>@sagarmisalweb</span> 
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="client-comment">
+                            <p>I had a positive experience in the codemind technology they are covered all the 
+                                concepts of Angular and Java. The teachers were exceptionally good, providing clear 
+                                explanations and guidance throughout the course. The coverage of both Angular and Java 
+                                was comprehensive, giving a well-rounded understanding of front-end and back-end 
+                                development. The instructors' expertise made complex concepts more accessible, and 
+                                their teaching methods facilitated a strong grasp of coding principles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="item"> 
+                    <div class = "testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                     <img src="images/testimonial-img/M1-letter.png">
+                                </div>
+                                <div class="name-user">
+                                    <strong>Monali Bandgar</strong>
+                                    <span>@monalibandgerweb</span> 
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="client-comment">
+                            <p>In the codemind technology teacher's teaching technique is really good, they made learning
+                               easy and because of this it creates interest in learning the programing languages. Coding 
+                               was difficult to me before I joined the class but now i really feel better and confident in 
+                               my skills and its only because of codeming technology.They making the study material easy 
+                               and therefore non-technical students also learn coding and it is the speciality of 
+                               codemind technology. and that's why My fear of coding is disappeared. So thanks to Codemind. </p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="item"> 
+                    <div class = "testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                     <img src="images/testimonial-img/R1-letter.png">
+                                </div>
+                                <div class="name-user">
+                                    <strong>Rucha Tungatkar</strong>
+                                     <span>@ruchatungatkarweb</span> 
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="client-comment">
+                            <p>I recently enrolled for the Angular Course at Codemind Technology. They are more 
+                               than simply a training institute; they are architects who shape your software development
+                               future.Here, desires become reality.Transforming dreams into code and creating futures. 
+                               The teachers at Codemind are highly certified and working professionals. Additionally, 
+                               I really enjoy their tagline, "Learn with us and job with us." </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- Syllabus Section -->
+    <div class="syllabus-section">
+        <div class="syllabus-title">
+            <p> What exactly we will learn in this <span style="color: orange;">Boot</span>Camp</p>
+        </div>
+        <div class="syllabus-card">
+            <div class="card3">
+                <div class="day-section">
+                    <p class="day">Day-1</p>
+                </div>
+                <h3>HTML Basics</h3>
+                <ul>
+                <li><i class="fa fa-angle-right"></i>&nbsp; Introduction to HTML</li>
+                <li><i class="fa fa-angle-right"></i>&nbsp; HTML Document Structure </li>
+                <li><i class="fa fa-angle-right"></i>&nbsp; HTML Tags and Elements </li>
+                <li><i class="fa fa-angle-right"></i>&nbsp; Text Formatting</li>
+                <li><i class="fa fa-angle-right"></i>&nbsp; Links and Anchor Tags</li>
+               </ul>
+              
+            </div>
+            <div class="card3">
+                <p class="day">Day-2</p>
+                 <h3>CSS Fundamentals</h3>
+                 <ul>
+                  <li><i class="fa fa-angle-right"></i>&nbsp; Introduction to CSS </li>
+                  <li><i class="fa fa-angle-right"></i>&nbsp; CSS Syntax and Selectors</li>
+                  <li><i class="fa fa-angle-right"></i>&nbsp; CSS Box Model </li>
+                  <li><i class="fa fa-angle-right"></i>&nbsp; Styling Text and Fonts </li>
+                  <li><i class="fa fa-angle-right"></i>&nbsp; CSS Colors and Backgrounds </li>
+                  </ul>
+            </div>
+            <div class="card3">
+                <p class="day">Day-3</p>
+                <h3>Advanced CSS Techniques</h3>
+               <ul>
+                <li><i class="fa fa-angle-right"></i>&nbsp; CSS Layouts: Flexbox </li>
+                <li><i class="fa fa-angle-right"></i>&nbsp; CSS Transitions and Animations </li>
+                <li><i class="fa fa-angle-right"></i>&nbsp; Media Query ( Responsive web ) </li>
+                <li><i class="fa fa-angle-right"></i>&nbsp; Deploying Your Web Project </li>
+                <li><i class="fa fa-angle-right"></i>&nbsp; Project Work and Recap</li>
+               </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instructor Information -->
+    <!--<div class="instructor-section">
+        <div class="instructor-info">
+                <div class="instructor-title">
+                    <p> Meet Your Instructor </p>
+                </div>
+                    <img  class="instructor-img" src="images/GK_Sir.JPG" >
+                    <h1>GK Sir</h1>
+                    <h3>I am NRI with having 10+ years of IT experience as full stack developer, passionate instructor and currently working as technical manager in MNC. I Love unveiling the magic of code & to sparks flames of creativity in eager minds</h3>
+        </div>
+    </div>-->
+
+    <div class="instructor-section">
+        <div class="instructor-info">
+                <div class="instructor-title">
+                    <p> Meet Your Instructor </p>
+                </div>
+                <div class="instructor-img-name">
+                    <img  class="instructor-img" src="images/GK_Sir.JPG" >
+                    <div class="instructor-name">
+                        <h1 class="sir">GK SIR</h1>
+                        <h3>FULL STACK DEVELOPER</h3>
+                        <!-- <h4>NRI Professional with 10+ Years Experience</h4> -->
+                    </div>
+                </div>
+                <div class="instructor-card">
+                    <!-- card-1 -->
+                    <div class="instructor-info-card">
+                        <div class="instructor-card-heading">
+                            <h1>12+</h1>
+                            <img src="images/experience-removebg-preview.png">
+                        </div>
+                        <p>NRI with years of full-stack development experience</p>
+                    </div>
+
+                     <!-- card-2 -->
+                     <div class="instructor-info-card">
+                        <div class="instructor-card-heading">
+                            <h1>10+</h1>
+                            <img src="images/experience-removebg-preview.png">
+                        </div>
+                        <p>Currently serving as a technical manager in an MNC</p>
+                    </div>
+
+                     <!-- card-3 -->
+                     <div class="instructor-info-card">
+                        <div class="instructor-card-heading">
+                            <h1>10+</h1>
+                            <img src="images/experience-removebg-preview.png">
+                        </div>
+                        <p>Years Of Experience In Training And Coaching</p>
+                    </div>
+
+                     <!-- card-4 -->
+                     <div class="instructor-info-card">
+                        <div class="instructor-card-heading">
+                            <h1>10+</h1>
+                            <img src="images/experience-removebg-preview.png">
+                        </div>
+                        <p>Passionate about teaching and inspiring creativity</p>
+                    </div>
+
+                     <!-- card-5 -->
+                     <div class="instructor-info-card">
+                        <div class="instructor-card-heading">
+                            <h1>10+</h1>
+                            <img src="images/experience-removebg-preview.png">
+                        </div>
+                        <p>Dedicated to unveiling the magic of code</p>
+                    </div>
+
+                     <!-- card-6 -->
+                     <div class="instructor-info-card">
+                        <div class="instructor-card-heading">
+                            <h1>10+</h1>
+                            <img src="images/experience-removebg-preview.png">
+                        </div>
+                        <p>Fostering innovation in eager minds</p>
+                    </div>
+
+                     <!-- card-7 -->
+                     <!--<div class="instructor-info-card">
+                        <div class="instructor-card-heading">
+                            <h1>10+</h1>
+                            <img src="images/experience-removebg-preview.png">
+                        </div>
+                        <p>Years Of Experience In Training And Coaching</p>
+                    </div>-->
+
+                     <!-- card-8 -->
+                     <!--<div class="instructor-info-card">
+                        <div class="instructor-card-heading">
+                            <h1>10+</h1>
+                            <img src="images/experience-removebg-preview.png">
+                        </div>
+                        <p>Years Of Experience In Training And Coaching</p>
+                    </div>-->
+                </div>
+        </div>
+    </div>
+
+    <!-- Photo-Section -->
+    <div class="photo-section">
+        <div>
+            <div class="photo-title">
+                <p class="photo-heading">Join My Mission</p>
+                <p>Empowering <span class="milion">1 Million</span> Software Developers to Succeed!</p>
+            </div>
+            <div class="grid-wrapper">
+                <div class="big">
+                    <a href="images/codemindTeam-img/sveri-2.jpg" class="popup-link">
+                        <img src="images/codemindTeam-img/sveri-2.jpg">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/codemindTeam-img/Drive-img.jpeg" class="popup-link">
+                        <img  src="images/codemindTeam-img/Drive-img.jpeg">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/codemindTeam-img/codemindBirth-img.jpeg" class="popup-link">
+                        <img  src="images/codemindTeam-img/codemindBirth-img.jpeg">
+                   </a>
+                </div>
+                <div>
+                    <a href="images/codemindTeam-img/karmayogi-1.jpg" class="popup-link">
+                        <img src="images/codemindTeam-img/karmayogi-1.jpg" >
+                    </a>
+                </div>
+                <div>
+                    <a href="images/codemindTeam-img/agpatil-7.png" class="popup-link">
+                        <img src="images/codemindTeam-img/agpatil-7.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/codemindTeam-img/Jalgaon-img.JPG" class="popup-link">
+                        <img src="images/codemindTeam-img/Jalgaon-img.JPG ">
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="photo-bottom-line">
+                <p>Guiding You Through Struggles, I'm Here...</p>
+            </div> -->
+        </div>
+    </div>
+   <!-- Popup Modal -->
+    <div id="popup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modal-image" src="" alt="Popup Image">
+        </div>
+    </div>
+    <!-- Popup Model(JavaScript) -->
+    <script src="photo-popup.js"></script>
+
+    <!-- Time count  -->
+    <section class="timecount-section">
+        <div class="timecount-container">
+            <div class="time-title">
+                <p class="hurry"> Hurry Up! </p>
+                <p> Time is Limited Secure Your Spot Now </p>
+            </div>
+            <div class="time-section">
+                <div class="time">
+                    <h1 id="days">00</h1>
+                    <h3>Days</h3>
+                </div>
+                <div class="time">
+                    <h1 id="hours">00</h1>
+                    <h3>Hours</h3>
+                </div>
+                <div class="time">
+                    <h1 id="minutes">00</h1>
+                    <h3>Minutes</h3>
+                </div>
+                <div class="time">
+                    <h1 id="seconds" >00</h1>
+                    <h3>Seconds</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Time count Logic (JavaScript) -->
+    <script src="timeCount.js"></script>
+
+    <!-- frequently Ask Questions -->
+    <div class="faq-section">
+        <div class="wrapper">
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq">
+              <button class="accordion">
+                What can I expect from the program?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p>
+                    The program offers a live bootcamp experience where you can participate in real-time sessions. 
+                    Our support team is available to assist with any queries you may have. You'll engage in an immersive
+                     learning environment designed to equip you with the knowledge and skills necessary for web development.
+                </p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                What if I haven't received a confirmation email after making the payment?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p>If you haven't received an email within 5-10 minutes,
+                   please contact us at hr@codemindtechnology.com Our support team will assist you within 24-48 hours
+                </p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                I'm new to web development. Should I enroll in the program?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p>
+                    Yes, you should! The program is perfect for beginners like you. It'll help you start your journey 
+                    as a web developer and get rid of any doubts you might have about becoming one.
+                </p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                Is this program suitable for beginners without a technical background?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p>
+                    Absolutely! This program is designed to help anyone start their journey in web development, 
+                    regardless of their background. Whether you're from a computer science background or not, you'll 
+                    be able to learn and succeed.
+                </p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                Is a refund possible for this program?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p>
+                    Unfortunately, we don't offer refunds at this time.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+                <button class="accordion">
+                    Is there a certificate provided upon completing the bootcamp?
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="pannel">
+                  <p>
+                    Yes, upon successful completion of the bootcamp, you'll receive a certificate of participation, 
+                    showcasing your newly acquired skills in HTML and CSS
+                  </p>
+                </div>
+              </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                How will access the content?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p>
+                    Once you've purchased the program, you'll receive an email containing all the necessary details.
+                </p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Logic -->
+    <script src="FAQ_logic.js"></script>
+    
+    <!-- copyRight-section -->
+    <div class="copyright">
+        <div class="codemide-logo">
+            <img src="images/codemind-img/codemind-img.jpeg" height="60px" width="60px">
+        </div>
+        <div class="copyright-name">
+            <strong>&copy; Copyright</strong> 
+        </div>
+    </div>
+
+    <!-- Footer-section -->
+    <footer>
+        <div>
+            <h3>&#8377; 99/-  <button class="bootcamp-btn" onclick="togglePopup()">Join BootCamp Now</button> </h3>
+            <h5>offer ends in   &nbsp;<span id="days1">00</span> : <span id="hours1">00</span> : <span id="minutes1">00</span> :  <span id="seconds1">00</span></h5>
+        </div>
+        <!-- Bottom to Top Scroll -->
+        <a href = "#" class="to-top">
+             <i class="fa fa-angle-up" id="topScroll"></i>
+        </a>
+        <script src="to_Top.js"></script>
+    </footer>
+    
+  
+
+    <!-- Owl-Curosel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Owl-Curosel Logic -->
+    <script src="owl-carousel2.js"></script>
+    <script src="owl-carousel1.js"></script>
+
+</body>
+</html>

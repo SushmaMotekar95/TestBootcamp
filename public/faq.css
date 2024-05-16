@@ -1,0 +1,106 @@
+.faq-section{
+    background-color: aliceblue;
+    padding-bottom: 40px;
+    font-family: "Nunito", sans-serif;
+}
+.wrapper {
+    max-width: 75%;
+    margin: auto;
+    font-family: "Nunito", sans-serif;
+  }
+  .wrapper > p,
+  .wrapper > h1 {
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+  .wrapper > h1 {
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+  }
+  .accordion {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 1rem 1.8rem;
+     border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+     border-radius: 20px; 
+    text-align: start;
+    font-family: "Nunito", sans-serif;
+  }
+  .accordion i {
+    font-size: 1.6rem;
+  }
+  .active,
+  .accordion:hover {
+    background-color: #ffffff;
+  }
+  .pannel {
+    padding: 0 2rem 2.5rem 2rem;
+    overflow: hidden;
+    background-color:#ffffff;
+    display: none;
+    border-radius: 20px;
+    font-family: "Nunito", sans-serif;
+  }
+  .pannel p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  .active,.accordion :active{
+    color: #ffa500;
+  }
+  
+  .faq {
+    border: 1px solid #ffa500;
+    margin: 10px 0;
+    border-radius: 20px;
+    font-family: "Nunito", sans-serif;
+   }
+  @media only screen and (max-width: 360px) {
+    .wrapper{
+      max-width: 85%;
+    }
+  }
+  /* For mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+    .accordion {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+      }
+      .pannel p {
+          font-size: 0.8rem;
+        }
+      .accordion i {
+        font-size: 1rem;
+      }
+      .pannel {
+        padding: 0 1rem 1rem 1rem;
+      }
+      .accordion i {
+        margin-left: 5px;
+      }
+      .wrapper h1{
+        font-size: 32px;
+      }
+      .faq {
+        border-radius: 15px;
+      }
+  }
+  /* For tablets like iPads (portrait and landscape) */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+  }  
+  /* For laptops and desktops */
+@media only screen and (min-width: 1025px) {
+   
+  }

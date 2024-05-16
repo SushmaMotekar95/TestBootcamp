@@ -1,0 +1,39 @@
+.to-top{
+    background-color: #464343;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events : none;
+    transition : all .4s;
+}
+.to-top.active{
+    bottom: 62px;
+    pointer-events: auto;
+    opacity: 1;
+}
+#topScroll{
+    color:#ffffff;
+}
+
+@media only screen and (max-width: 767px) {
+    .to-top{
+        right: 10px;
+    }
+    
+ }
+  /* For tablets like iPads (portrait and landscape) */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+  }  
+  /* For laptops and desktops */
+@media only screen and (min-width: 1025px) {
+}

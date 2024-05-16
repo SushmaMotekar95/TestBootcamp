@@ -1,0 +1,103 @@
+.progarm-section{
+    text-align: center;
+    padding: 45px 20px 20px 20px;
+    background-color:#f0f8ff;
+}
+.program-title{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+.boot-word{
+    color:#ffa500;
+}
+.progarm-section .program-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+}
+.card-img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+.card{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    border: 1px solid rgb(255, 212, 212);
+    height: 200px;
+    width: 350px;
+    margin: 20px;
+    /* background-color: rgb(223, 243, 243); */
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-family: "Nunito", sans-serif; 
+    transition: transform 0.8s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card h3{
+    font-size: 20px;
+    line-height: 1cm;
+}
+.card p{
+    line-height: 0.7cm;
+}
+#card-color1{
+    background-color: rgb(223, 243, 243);
+}
+#card-color2{
+    background-color: rgb(232, 223, 243);
+}
+#card-color3{
+    background-color: rgb(243, 236, 223);
+}
+#card-color4{
+    background-color: rgb(223, 232, 243);
+}
+#card-color5{
+    background-color: rgb(221, 248, 213);
+}
+#card-color6{
+    background-color: rgb(206, 245, 230);
+}
+#card6{
+    border-radius: 50%;
+}
+
+
+
+@media only screen and (max-width: 360px){
+    .progarm-section .program-card {
+        line-height: 0.8cm;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .program-title{
+        font-size: 32px;
+    }
+    .card{
+        height: 235px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .card h3{
+        line-height:normal;
+    }
+    
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .card{
+        height: 220px;
+    }
+}
+@media only screen and (min-width: 1025px) {
+   
+}

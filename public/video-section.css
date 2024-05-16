@@ -1,0 +1,290 @@
+ /*-----video Section -----*/
+ .VideoSection{
+    text-align: center;
+    padding: 30px 20px 20px 20px;
+    background-color: #f0f8ff;
+    font-family: "Nunito", sans-serif;
+    display: flex;  
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+ .video-section{
+    text-align: center;
+    padding-top: 60px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .Title1{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #000000;
+   }
+   .Title2{
+    font-weight:lighter;
+    color: #ffa500;
+    line-height: 0.8cm;
+    font-size: 20px;
+    }
+    .title-section1 {
+        /* padding-top: 30px; */
+        padding-left: 20px;
+        width: 450px;
+    }
+    .title-section1 .Title1{
+        line-height: 1.2cm;
+    }
+    .display-video{
+        border-radius: 10px;
+        width:350px;
+        height:250px;
+        border:10px solid rgb(190, 190, 190);
+    }
+    .detail-section{
+        width:850px;
+        height: 100%;
+        margin:20px 20px 20px 20px;
+        background-color: rgb(58, 53, 53);
+        border-radius: 20px;
+        color:white;    
+    }
+    .info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* align-items: center; */
+        padding-top: 10px;
+        padding-bottom: 15px
+    }
+    .boot{
+       
+        width:195px;
+        padding: 20px;
+        margin: 10px 10px 10px 10px;
+        /* background:#02486b; */
+        background-color: rgb(97, 94, 89);
+        box-shadow: 5px 5px 10px rgb(78, 76, 72);
+        color:#ffffff;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;     
+    }
+.title-section{
+    margin:20px;
+}
+.developer-section{
+    display:flex;
+    height: 160px;
+    padding-left: 20px;
+    padding-left: 20px;
+    text-align: start;
+}
+.img1{
+    border-radius: 15%;
+    margin-left: 20px;
+}
+.GKTitle{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1cm;
+}
+.information{
+    margin:10px 32px 32px 32px;
+}
+.btn{
+    width: 860px;
+    height: auto;
+    font-family: "Nunito", sans-serif;
+    background-color: #ffa500;
+    border-radius: 100px;
+    font-size: 25px;
+    font-weight: bold;
+    color:#ffffff;
+    border: 2px solid #ffffff;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    line-height: 0.6cm;
+    transition: transform 0.5s, background-color 2s;
+}
+ /* Button hover effect */
+ .btn:hover {
+    background-color: #009378; 
+}
+
+/* Button click effect */
+.btn:active {
+    background-color: #009378; 
+    transform: scale(0.9);
+}
+
+.small-text{
+    font-size: 15px;
+    margin-top: -5px;  
+    font-weight: lighter;
+}
+.Title2{
+    animation: fadeInOut 10s infinite;  
+}
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+
+@media only screen and (max-width: 360px) {
+    .VideoSection{
+        padding: 20px -1px 20px 10px;
+    }
+    .VideoSection .detail-section{
+        width:auto;
+        height: auto;
+    }
+    .VideoSection .detail-section .boot{
+        width: 90px;
+    }
+    .VideoSection .btn {
+        width: 295px;
+    }
+    .title-section1{
+        width: 350px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .video-section{
+        padding-top: 50px;
+    }
+    .display-video{
+        width:auto;
+        height:175px;
+    }
+    .detail-section{
+        width:auto;
+        height: auto;
+        border-radius: 20px;
+        color:#ffffff;
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+    .img1{
+        margin-left: 0px; 
+    }
+    .developer-section
+    {
+       top:15px;
+       flex-wrap: wrap; 
+      text-align: center;
+      justify-content: center;
+    }
+    .boot{
+        width: 115px;
+        margin:10px;
+        padding: 5px 10px 5px 10px;
+        font-size: 17px;
+    }
+    .btn{
+        width: 340px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .btn .small-text{
+        font-size: 12px;
+    }
+    .GKTitle{
+        line-height: normal;
+    }
+    .title-section1{
+        padding-top: 10px;
+        padding-left: 0px;
+        width: 350px;
+    }
+    .title-section1 .Title1 {
+        line-height: 1cm;
+        font-size: 1.5rem;
+    }
+    .VideoSection{
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    .Title2{
+        line-height: normal;
+        font-size: 17px;
+    }    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .detail-section{
+        width:63%;
+        height:auto;
+        background-color: rgb(58, 53, 53);
+        border-radius: 20px;
+        color:#ffffff;
+        margin-top: 30px;
+       
+    }
+    .title-section1{
+        padding-top: 20px;
+        width: 510px;
+    }
+
+    .display-video {
+        width: 450px;
+        height: 250px;
+    }
+    .img1{
+        height:100px;       
+    }
+    .developer-section
+    {
+        top:25px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .boot {
+        width:155px;
+    }
+    .detail-section{
+        padding: 5px;
+    }
+    .btn{
+        width: 475px;
+        font-weight: bold;
+        margin-left: 0px;
+    }
+    .information{
+        text-align: center;
+    }
+    
+} 
+@media only screen and (min-width: 912px) and (max-width: 912px) and (orientation: portrait) {
+    .detail-section{
+        width: 54%;
+    }
+    .btn{
+        width: 489px;
+        margin-left: -8px;
+    }
+ }
+ @media only screen and (min-width: 1368px) and (max-width: 1368px) and (orientation: landscape) {
+    .detail-section{
+        width: 54%;
+    }
+    .btn{
+        width: 489px;
+        margin-left: -8px;
+    }
+ }
+
+@media only screen and (min-width: 1025px) {
+  
+   
+}
